@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,16 +9,19 @@
     tools:context=".MainActivity">
 
     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="605dp"
         android:layout_marginTop="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:context=".MainActivity">
 
         <TableRow
+            android:id="@+id/rowSix"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -37,6 +41,7 @@
         </TableRow>
 
         <TableRow
+            android:id="@+id/rowFive"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
@@ -51,7 +56,7 @@
                 android:background="@drawable/misc_button"
                 android:text="C"
                 android:textColor="@color/white"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/plusMinusButton"
@@ -62,7 +67,7 @@
                 android:background="@drawable/misc_button"
                 android:text="+/-"
                 android:textColor="@color/white"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 app:cornerRadius="5dp" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -74,7 +79,7 @@
                 android:background="@drawable/misc_button"
                 android:text="%"
                 android:textColor="@color/white"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 app:cornerRadius="5dp" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -86,12 +91,13 @@
                 android:background="@drawable/delete_button"
                 android:text="⌫"
                 android:textColor="@color/white"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:textStyle="bold" />
 
         </TableRow>
 
         <TableRow
+            android:id="@+id/rowFour"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
@@ -106,7 +112,7 @@
                 android:background="@drawable/number_button"
                 android:text="7"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/eightButton"
@@ -117,7 +123,7 @@
                 android:background="@drawable/number_button"
                 android:text="8"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/nineButton"
@@ -128,7 +134,7 @@
                 android:background="@drawable/number_button"
                 android:text="9"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/divisionButton"
@@ -139,12 +145,13 @@
                 android:background="@drawable/operation_button"
                 android:text="÷"
                 android:textColor="@color/white"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 app:cornerRadius="5dp" />
 
         </TableRow>
 
         <TableRow
+            android:id="@+id/rowThree"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
@@ -159,7 +166,7 @@
                 android:background="@drawable/number_button"
                 android:text="4"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/fiveButton"
@@ -170,7 +177,7 @@
                 android:background="@drawable/number_button"
                 android:text="5"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/sixButton"
@@ -181,7 +188,7 @@
                 android:background="@drawable/number_button"
                 android:text="6"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/multiplicationButton"
@@ -192,12 +199,13 @@
                 android:background="@drawable/operation_button"
                 android:text="×"
                 android:textColor="@color/white"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 app:cornerRadius="5dp" />
 
         </TableRow>
 
         <TableRow
+            android:id="@+id/rowTwo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
@@ -212,7 +220,7 @@
                 android:background="@drawable/number_button"
                 android:text="1"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/twoButton"
@@ -223,7 +231,7 @@
                 android:background="@drawable/number_button"
                 android:text="2"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/threeButton"
@@ -234,7 +242,7 @@
                 android:background="@drawable/number_button"
                 android:text="3"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/subtractionButton"
@@ -245,12 +253,13 @@
                 android:background="@drawable/operation_button"
                 android:text="-"
                 android:textColor="@color/white"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 app:cornerRadius="20dp" />
 
         </TableRow>
 
         <TableRow
+            android:id="@+id/rowOne"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
@@ -265,7 +274,7 @@
                 android:background="@drawable/number_button"
                 android:text="0"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/decimalButton"
@@ -276,7 +285,7 @@
                 android:background="@drawable/number_button"
                 android:text="."
                 android:textColor="@color/black"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -288,7 +297,7 @@
                 android:background="@drawable/number_button"
                 android:text="="
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/additionButton"
@@ -299,7 +308,7 @@
                 android:background="@drawable/operation_button"
                 android:text="+"
                 android:textColor="@color/white"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 app:cornerRadius="5dp" />
 
         </TableRow>
