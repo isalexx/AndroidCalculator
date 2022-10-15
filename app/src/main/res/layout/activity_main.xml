@@ -6,34 +6,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary"
+    android:onClick="MiscButtons"
     tools:context=".MainActivity">
 
     <TableLayout
         android:layout_width="0dp"
-        android:layout_height="605dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         tools:context=".MainActivity">
 
         <TableRow
             android:id="@+id/rowSix"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="148dp"
             android:layout_margin="10dp"
             android:background="@color/primaryLight"
-            android:gravity="right">
+            android:gravity="right"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/resultLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="0"
+                android:text=""
                 android:textAlignment="textEnd"
                 android:textColor="@color/white"
                 android:textSize="48sp"
@@ -143,7 +144,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/operation_button"
-                android:text="÷"
+                android:text=" ÷ "
                 android:textColor="@color/white"
                 android:textSize="25sp"
                 app:cornerRadius="5dp" />
@@ -197,7 +198,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/operation_button"
-                android:text="×"
+                android:text=" × "
                 android:textColor="@color/white"
                 android:textSize="25sp"
                 app:cornerRadius="5dp" />
@@ -251,7 +252,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/operation_button"
-                android:text="-"
+                android:text=" - "
                 android:textColor="@color/white"
                 android:textSize="25sp"
                 app:cornerRadius="20dp" />
@@ -306,11 +307,12 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/operation_button"
-                android:text="+"
+                android:text=" + "
                 android:textColor="@color/white"
                 android:textSize="25sp"
                 app:cornerRadius="5dp" />
 
         </TableRow>
+
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
