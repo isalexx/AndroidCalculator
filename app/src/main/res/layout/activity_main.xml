@@ -11,13 +11,34 @@
     <TableLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:context=".MainActivity">
+
+        <TableRow
+            android:id="@+id/rowSeven"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/historyLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_span="4"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </TableRow>
 
         <TableRow
             android:id="@+id/rowSix"
@@ -66,9 +87,9 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/misc_button"
-                android:onClick="ButtonPressed"
                 android:text="+/-"
                 android:textColor="@color/white"
+                android:onClick="ChangePolarity"
                 android:textSize="25sp"
                 app:cornerRadius="5dp" />
 
@@ -80,7 +101,7 @@
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/misc_button"
                 android:onClick="ButtonPressed"
-                android:text="%"
+                android:text=" % "
                 android:textColor="@color/white"
                 android:textSize="25sp"
                 app:cornerRadius="5dp" />
