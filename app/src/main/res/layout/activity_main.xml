@@ -9,14 +9,14 @@
     tools:context=".MainActivity">
 
     <TableLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:context=".MainActivity">
 
         <TableRow
@@ -52,8 +52,8 @@
                 android:id="@+id/resultLabel"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_span="4"
                 android:layout_margin="10dp"
+                android:layout_span="4"
                 android:text=""
                 android:textAlignment="textEnd"
                 android:textColor="@color/white"
@@ -75,7 +75,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/misc_button"
-                android:onClick="Clear"
+                android:onClick="clear"
                 android:text="C"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -87,9 +87,9 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/misc_button"
+                android:onClick="changePolarity"
                 android:text="+/-"
                 android:textColor="@color/white"
-                android:onClick="ChangePolarity"
                 android:textSize="25sp"
                 app:cornerRadius="5dp" />
 
@@ -100,7 +100,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/misc_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text=" % "
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -113,7 +113,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/delete_button"
-                android:onClick="Delete"
+                android:onClick="delete"
                 android:text="⌫"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -135,10 +135,10 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/number_button"
+                android:onClick="buttonPressed"
                 android:text="7"
                 android:textColor="@color/black"
-                android:textSize="25sp"
-                android:onClick="ButtonPressed" />
+                android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/eightButton"
@@ -147,7 +147,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/number_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text="8"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -159,7 +159,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/number_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text="9"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -171,7 +171,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/operation_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text=" ÷ "
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -193,7 +193,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/number_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text="4"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -205,7 +205,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/number_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text="5"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -217,7 +217,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/number_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text="6"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -229,7 +229,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/operation_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text=" × "
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -251,7 +251,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/number_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text="1"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -263,7 +263,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/number_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text="2"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -275,7 +275,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/number_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text="3"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -287,7 +287,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/operation_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text=" - "
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -309,7 +309,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/number_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text="0"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -321,7 +321,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/number_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text="."
                 android:textColor="@color/black"
                 android:textSize="25sp"
@@ -334,8 +334,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/number_button"
+                android:onClick="evaluate"
                 android:text="="
-                android:onClick="Evaluate"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
 
@@ -346,7 +346,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/operation_button"
-                android:onClick="ButtonPressed"
+                android:onClick="buttonPressed"
                 android:text=" + "
                 android:textColor="@color/white"
                 android:textSize="25sp"
